@@ -18,6 +18,10 @@
 		562E9801178FBE0800ED52DE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 562E9800178FBE0800ED52DE /* Default@2x.png */; };
 		562E9803178FBE0800ED52DE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 562E9802178FBE0800ED52DE /* Default-568h@2x.png */; };
 		562E9806178FBE0800ED52DE /* MoVeApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 562E9804178FBE0800ED52DE /* MoVeApplication.xcdatamodeld */; };
+		562E980E178FBE4E00ED52DE /* MAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562E980D178FBE4E00ED52DE /* MAViewController.m */; };
+		562E9810178FBE7C00ED52DE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562E980F178FBE7C00ED52DE /* Storyboard.storyboard */; };
+		56DFEA75178FD0B4000146DE /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DFEA74178FD0B4000146DE /* Meeting.m */; };
+		56DFEA78178FD301000146DE /* MAAddMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DFEA77178FD301000146DE /* MAAddMeetingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,13 @@
 		562E9800178FBE0800ED52DE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		562E9802178FBE0800ED52DE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		562E9805178FBE0800ED52DE /* MoVeApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoVeApplication.xcdatamodel; sourceTree = "<group>"; };
+		562E980C178FBE4E00ED52DE /* MAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAViewController.h; path = ../MAViewController.h; sourceTree = "<group>"; };
+		562E980D178FBE4E00ED52DE /* MAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAViewController.m; path = ../MAViewController.m; sourceTree = "<group>"; };
+		562E980F178FBE7C00ED52DE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
+		56DFEA73178FD0B4000146DE /* Meeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meeting.h; sourceTree = "<group>"; };
+		56DFEA74178FD0B4000146DE /* Meeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meeting.m; sourceTree = "<group>"; };
+		56DFEA76178FD301000146DE /* MAAddMeetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAddMeetingViewController.h; sourceTree = "<group>"; };
+		56DFEA77178FD301000146DE /* MAAddMeetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAddMeetingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +95,17 @@
 		562E97F2178FBE0800ED52DE /* MoVeApplication */ = {
 			isa = PBXGroup;
 			children = (
+				562E980C178FBE4E00ED52DE /* MAViewController.h */,
+				562E980D178FBE4E00ED52DE /* MAViewController.m */,
+				562E980F178FBE7C00ED52DE /* Storyboard.storyboard */,
 				562E97FB178FBE0800ED52DE /* MAAppDelegate.h */,
 				562E97FC178FBE0800ED52DE /* MAAppDelegate.m */,
 				562E9804178FBE0800ED52DE /* MoVeApplication.xcdatamodeld */,
+				56DFEA73178FD0B4000146DE /* Meeting.h */,
+				56DFEA74178FD0B4000146DE /* Meeting.m */,
 				562E97F3178FBE0800ED52DE /* Supporting Files */,
+				56DFEA76178FD301000146DE /* MAAddMeetingViewController.h */,
+				56DFEA77178FD301000146DE /* MAAddMeetingViewController.m */,
 			);
 			path = MoVeApplication;
 			sourceTree = "<group>";
@@ -162,6 +180,7 @@
 				562E97FF178FBE0800ED52DE /* Default.png in Resources */,
 				562E9801178FBE0800ED52DE /* Default@2x.png in Resources */,
 				562E9803178FBE0800ED52DE /* Default-568h@2x.png in Resources */,
+				562E9810178FBE7C00ED52DE /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +194,9 @@
 				562E97F9178FBE0800ED52DE /* main.m in Sources */,
 				562E97FD178FBE0800ED52DE /* MAAppDelegate.m in Sources */,
 				562E9806178FBE0800ED52DE /* MoVeApplication.xcdatamodeld in Sources */,
+				562E980E178FBE4E00ED52DE /* MAViewController.m in Sources */,
+				56DFEA75178FD0B4000146DE /* Meeting.m in Sources */,
+				56DFEA78178FD301000146DE /* MAAddMeetingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +311,7 @@
 				562E980B178FBE0800ED52DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

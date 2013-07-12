@@ -7,6 +7,7 @@
 //
 
 #import "MAAppDelegate.h"
+#import "MAViewController.h"
 
 @implementation MAAppDelegate
 
@@ -18,6 +19,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    //Instantiate storyboard
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+    
+    self.window.rootViewController = [storyboard instantiateInitialViewController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
