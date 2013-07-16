@@ -13,7 +13,11 @@
 @end
 
 @implementation MAMeetingDetailsViewController
-@synthesize meetingFound, meetingName, positionName, departmentName, contentName;
+@synthesize meetingFound = _meetingFound;
+@synthesize meetingName = _meetingName;
+@synthesize positionName = _positionName;
+@synthesize departmentName = _departmentName;
+@synthesize contentName = _contentName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,10 +33,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    meetingName.text = meetingFound.name;
-    positionName.text = meetingFound.position;
-    departmentName.text = meetingFound.department;
-    contentName.text = meetingFound.content;
+    self.meetingName.text = self.meetingFound.name;
+    self.positionName.text = self.meetingFound.position;
+    self.departmentName.text = self.meetingFound.department;
+    self.contentName.text = self.meetingFound.content;
     
 }
 
@@ -40,6 +44,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - IBActions
+
+- (void)meetingDataChanged:(id)sender {
+    self.meetingFound.name = self.meetingName.text;
+    self.meetingFound.position = self.positionName.text;
+    self.meetingFound.department = self.departmentName.text;
+    self.meetingFound.content = self.contentName.text;
 }
 
 @end

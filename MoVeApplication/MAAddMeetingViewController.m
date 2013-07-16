@@ -54,6 +54,7 @@
     meeting.name = self.mName.text;
     meeting.position = self.mPosition.text;
     meeting.department = self.mDepartment.text;
+    meeting.content = self.mContent.text;
     meeting.date = [NSDate date];
     
     NSError *error;

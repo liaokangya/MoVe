@@ -17,4 +17,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *departmentName;
 @property (strong, nonatomic) IBOutlet UITextField *contentName;
 
+- (IBAction)meetingDataChanged:(id)sender;
+
 @end

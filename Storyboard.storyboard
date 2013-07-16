@@ -120,6 +120,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="meetingDataChanged:" destination="wzy-b8-Hsr" eventType="editingChanged" id="FTR-Vr-r2p"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74p-TM-yGn">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -144,14 +147,23 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r74-Jb-hNY">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="meetingDataChanged:" destination="wzy-b8-Hsr" eventType="editingChanged" id="HBr-Dv-P1Q"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4dm-w6-29J">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="meetingDataChanged:" destination="wzy-b8-Hsr" eventType="editingChanged" id="yBT-HA-27y"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KuR-TV-TlP">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="meetingDataChanged:" destination="wzy-b8-Hsr" eventType="editingChanged" id="n7A-YX-zLr"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -177,14 +189,12 @@
                             <constraint firstItem="KuR-TV-TlP" firstAttribute="top" secondItem="IOK-M2-EVJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wRw-Mh-lb6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Details" id="STM-9e-0mN">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="KYH-TO-NQ1"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Details" id="STM-9e-0mN"/>
                     <connections>
-                        <outlet property="contentName" destination="KuR-TV-TlP" id="ggd-E7-ET4"/>
-                        <outlet property="departmentName" destination="4dm-w6-29J" id="aS9-ba-tNh"/>
-                        <outlet property="meetingName" destination="CCF-FN-Ai0" id="5Uf-d7-82z"/>
-                        <outlet property="positionName" destination="r74-Jb-hNY" id="zGQ-7C-UlY"/>
+                        <outlet property="contentName" destination="KuR-TV-TlP" id="2Rn-jt-PN9"/>
+                        <outlet property="departmentName" destination="4dm-w6-29J" id="0O7-Sd-D20"/>
+                        <outlet property="meetingName" destination="CCF-FN-Ai0" id="7S1-Bc-WUn"/>
+                        <outlet property="positionName" destination="r74-Jb-hNY" id="3qw-OT-Mcm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjW-p9-W5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -252,6 +262,35 @@
             <point key="canvasLocation" x="55" y="79"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="MAAddMeetingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MAAddMeetingViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelButtonClicked:"/>
+                <relationship kind="action" name="saveButtonClicked:"/>
+                <relationship kind="outlet" name="mContent" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="mDepartment" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="mName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="mPosition" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="MAMeetingDetailsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MAMeetingDetailsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="meetingDataChanged:"/>
+                <relationship kind="outlet" name="contentName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="departmentName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="meetingName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="positionName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="MAViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MAViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
