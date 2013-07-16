@@ -10,6 +10,7 @@
 #import "MAAppDelegate.h"
 #import "Meeting.h"
 #import "MAAddMeetingViewController.h"
+#import "MAMeetingDetailsViewController.h"
 
 @interface MAViewController ()
 @property(nonatomic, weak)MAAppDelegate *delegate;
@@ -77,6 +78,11 @@
     if ([segue.identifier isEqualToString:@"addMeeting"]) {
         MAAddMeetingViewController *vc = [segue destinationViewController];
         vc.delegate = self;
+    } else if ([segue.identifier isEqualToString:@"meetingDetails"]) {
+        MAMeetingDetailsViewController *vc = [segue destinationViewController];
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        Meeting *m = [self.meetings objectAtIndex:path.row];
+        vc.meetingFound = m;
     }
 }
 

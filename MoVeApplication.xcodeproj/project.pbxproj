@@ -20,6 +20,7 @@
 		562E9806178FBE0800ED52DE /* MoVeApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 562E9804178FBE0800ED52DE /* MoVeApplication.xcdatamodeld */; };
 		562E980E178FBE4E00ED52DE /* MAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562E980D178FBE4E00ED52DE /* MAViewController.m */; };
 		562E9810178FBE7C00ED52DE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562E980F178FBE7C00ED52DE /* Storyboard.storyboard */; };
+		566C0CA51794D66100323A11 /* MAMeetingDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566C0CA41794D66100323A11 /* MAMeetingDetailsViewController.m */; };
 		56DFEA75178FD0B4000146DE /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DFEA74178FD0B4000146DE /* Meeting.m */; };
 		56DFEA78178FD301000146DE /* MAAddMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DFEA77178FD301000146DE /* MAAddMeetingViewController.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,8 @@
 		562E980C178FBE4E00ED52DE /* MAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAViewController.h; path = ../MAViewController.h; sourceTree = "<group>"; };
 		562E980D178FBE4E00ED52DE /* MAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAViewController.m; path = ../MAViewController.m; sourceTree = "<group>"; };
 		562E980F178FBE7C00ED52DE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
+		566C0CA31794D66100323A11 /* MAMeetingDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMeetingDetailsViewController.h; sourceTree = "<group>"; };
+		566C0CA41794D66100323A11 /* MAMeetingDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMeetingDetailsViewController.m; sourceTree = "<group>"; };
 		56DFEA73178FD0B4000146DE /* Meeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meeting.h; sourceTree = "<group>"; };
 		56DFEA74178FD0B4000146DE /* Meeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meeting.m; sourceTree = "<group>"; };
 		56DFEA76178FD301000146DE /* MAAddMeetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAddMeetingViewController.h; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 				562E97F3178FBE0800ED52DE /* Supporting Files */,
 				56DFEA76178FD301000146DE /* MAAddMeetingViewController.h */,
 				56DFEA77178FD301000146DE /* MAAddMeetingViewController.m */,
+				566C0CA31794D66100323A11 /* MAMeetingDetailsViewController.h */,
+				566C0CA41794D66100323A11 /* MAMeetingDetailsViewController.m */,
 			);
 			path = MoVeApplication;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				562E980E178FBE4E00ED52DE /* MAViewController.m in Sources */,
 				56DFEA75178FD0B4000146DE /* Meeting.m in Sources */,
 				56DFEA78178FD301000146DE /* MAAddMeetingViewController.m in Sources */,
+				566C0CA51794D66100323A11 /* MAMeetingDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
